@@ -1,12 +1,18 @@
 "use client";
 
-export function Logo({ size = 56, className = "" }: { size?: number; className?: string }) {
+export function Logo({
+  size = 56,
+  className = "",
+}: {
+  size?: number;
+  className?: string;
+}) {
   return (
     <div className={`flex items-center gap-3 ${className}`}>
       {/* Logo image - place your logo.png in public/ folder */}
       <img
         src="/logo.png"
-        alt="Prime Rim Repair"
+        alt="Prime Rims Repair"
         width={size}
         height={size}
         className="rounded-full object-cover shrink-0"
@@ -21,6 +27,7 @@ export function Logo({ size = 56, className = "" }: { size?: number; className?:
           if (next) next.style.display = "flex";
         }}
       />
+
       {/* Fallback circle (hidden when image loads) */}
       <div
         className="rounded-full items-center justify-center shrink-0"
@@ -32,14 +39,20 @@ export function Logo({ size = 56, className = "" }: { size?: number; className?:
           boxShadow: "0 0 12px rgba(196,147,50,0.2)",
         }}
       >
-        <span style={{ fontSize: size * 0.22 }} className="font-black text-[#0a0a0c]">PR</span>
+        <span
+          style={{ fontSize: size * 0.22 }}
+          className="font-black text-[#0a0a0c]"
+        >
+          PR
+        </span>
       </div>
+
       {/* Text */}
       <span
         className="font-black tracking-[0.06em] text-white uppercase hidden sm:block"
         style={{ fontSize: Math.max(size * 0.22, 12) }}
       >
-        Prime Rim Repair
+        Prime Rims Repair
       </span>
     </div>
   );
