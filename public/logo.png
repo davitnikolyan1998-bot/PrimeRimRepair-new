@@ -1,0 +1,35 @@
+"use client";
+
+export function Logo({
+  size = 56,
+  className = "",
+}: {
+  size?: number;
+  className?: string;
+}) {
+  return (
+    <div className={`flex items-center gap-3 ${className}`}>
+      <img
+        src="/logo.png"
+        alt="Prime Rims Repair"
+        width={size}
+        height={size}
+        className="rounded-full object-cover shrink-0"
+        style={{
+          width: size,
+          height: size,
+          filter: "drop-shadow(0 0 12px rgba(196,147,50,0.20))",
+        }}
+      />
+
+      <span
+        className="font-black tracking-[0.08em] text-white uppercase whitespace-nowrap"
+        style={{
+          fontSize: Math.max(size * 0.22, 12),
+        }}
+      >
+        PRIME RIMS REPAIR
+      </span>
+    </div>
+  );
+}
