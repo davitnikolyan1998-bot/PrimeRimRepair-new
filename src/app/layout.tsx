@@ -3,9 +3,9 @@ import "./globals.css";
 import Script from "next/script";
 
 export const metadata: Metadata = {
-  title: "Prime Rims Repair | Premium Wheel Restoration",
+  title: "Prime Rims Repair | Mobile Wheel Repair in Bakersfield, CA",
   description:
-    "Premium mobile wheel restoration services. Curb rash repair, bent wheel straightening, custom refinishing, and same-day service. Call (747) 955-7555.",
+    "Premium mobile wheel restoration in Bakersfield, CA. Curb rash repair, wheel refinishing, and same-day mobile service. Call (747) 955-7555.",
   appleWebApp: {
     capable: true,
     statusBarStyle: "black-translucent",
