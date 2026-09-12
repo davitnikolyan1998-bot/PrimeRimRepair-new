@@ -89,8 +89,8 @@ export default function Hero() {
 
             <BlurFade delay={0.3}>
               <p className="text-silver-400 text-base sm:text-lg leading-relaxed mb-8 max-w-lg">
-                Premium mobile wheel restoration. Curb rash, bent wheels,
-                custom refinishing — right at your doorstep. Same-day service
+                Premium mobile wheel restoration. Curb rash repair and custom
+                refinishing — right at your doorstep. Same-day service
                 available.
               </p>
             </BlurFade>
