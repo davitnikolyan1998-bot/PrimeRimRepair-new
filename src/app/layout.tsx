@@ -3,12 +3,13 @@ import "./globals.css";
 import Script from "next/script";
 
 export const metadata: Metadata = {
-  title: "Prime Rim Repair | Premium Wheel Restoration",
-  description: "Premium wheel restoration services. Curb rash repair, bent wheel straightening, custom refinishing. Call (747) 955-7555.",
+  title: "Prime Rims Repair | Premium Wheel Restoration",
+  description:
+    "Premium mobile wheel restoration services. Curb rash repair, bent wheel straightening, custom refinishing, and same-day service. Call (747) 955-7555.",
   appleWebApp: {
     capable: true,
     statusBarStyle: "black-translucent",
-    title: "Prime Rim Repair",
+    title: "Prime Rims Repair",
   },
   formatDetection: {
     telephone: true,
@@ -28,7 +29,11 @@ export const viewport: Viewport = {
   viewportFit: "cover",
 };
 
-export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
+export default function RootLayout({
+  children,
+}: Readonly<{
+  children: React.ReactNode;
+}>) {
   return (
     <html lang="en" className="scroll-smooth">
       <head>
@@ -36,6 +41,7 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
           src="https://www.googletagmanager.com/gtag/js?id=AW-18085295436"
           strategy="afterInteractive"
         />
+
         <Script id="google-ads-tag" strategy="afterInteractive">
           {`
             window.dataLayer = window.dataLayer || [];
@@ -45,6 +51,7 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
           `}
         </Script>
       </head>
+
       <body className="min-h-full flex flex-col bg-[#0a0a0c] text-[#f0f0f0] antialiased overflow-x-hidden">
         {children}
       </body>
